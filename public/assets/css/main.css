@@ -198,7 +198,7 @@ CSS LIST
   height: 100%;
   width: 100%;
   border-radius: 210px;
-  background-color: var(--qt-bg-bg-7);
+  background-color: #9A7AC6;
   z-index: -2;
   transition: all 0.4s;
 }
@@ -453,6 +453,8 @@ CSS LIST
 }
 .header4-buttons a {
   display: inline-block;
+  background-color:#b6c300;
+  color:white;
 }
 
 .theme-btn4 {
@@ -688,7 +690,8 @@ CSS LIST
 
 .theme-btn8 {
   display: inline-block;
-  color: var(--Text-Color, #0a0726);
+  background-color:#b6c300;
+  color: white;  /*var(--Text-Color, #0a0726)*/
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -2587,7 +2590,7 @@ body.body {
   --qt-text-p-text4: #6e6e72;
   --qt-bg-bg-w: #fff;
   --qt-bg-bg-1: #101537;
-  --qt-bg-bg-2: #6534f4;
+  --qt-bg-bg-2: #9A7AC6;    /*<!-- #9A7AC6 --> #6534f4 */
   --qt-bg-bg-3: #242c56;
   --qt-bg-bg-4: #373d60;
   --qt-bg-bg-5: #f5f8ff;
@@ -3616,7 +3619,7 @@ body.body {
   display: block;
   width: 45px;
   height: 45px;
-  background: #fff;
+  background: #b6c300;
   border-radius: 50%;
   transition: all 200ms;
 }
@@ -3636,7 +3639,7 @@ body.body {
   width: 0;
   height: 0;
   border-radius: 4px;
-  border-left: 13px solid #7949ff;
+  border-left: 13px solid #f5f5f5;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
 }
@@ -5015,7 +5018,7 @@ body.body {
 }
 .footer2 .single-footer-items .social-icons li a:hover::after {
   transition: all 0.4s;
-  background: var(--qt-bg-bg-15);
+  background: #9A7AC6;
 }
 .footer2 .copyright-area {
   padding: 16px 0;
@@ -6642,7 +6645,8 @@ li.has-dropdown1 span {
   animation-duration: 1s;
   animation-fill-mode: forwards;
   border-bottom: 1px solid rgba(255, 255, 255, 0.452);
-  background-image: url(../img/bg/hero6-bg.png);
+  /* background-image: url(../img/bg/hero6-bg.png); */
+  background-color:#9A7AC6;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -12003,7 +12007,8 @@ body.body2 {
   left: 0;
   height: 100%;
   width: 100%;
-  background-image: url(../img/bg/hero6-bg.png);
+  /* background-image: url(../img/bg/hero6-bg.png); */
+  background-color:#9A7AC6;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -17982,7 +17987,7 @@ body.body2 {
 .service4 .service-box:hover {
   transform: translateY(-10px);
   transition: all 0.4s;
-  background-color: var(--qt-bg-bg-15);
+  background-color: #9A7AC6;
 }
 .service4 .service-box:hover .icon img {
   transition: all 0.4s;

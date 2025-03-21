@@ -6,8 +6,8 @@
  */
 :root {
   --bs-blue: #0d6efd;
-  --bs-indigo: #6610f2;
-  --bs-purple: #6f42c1;
+  --bs-indigo: #9A7AC6;
+  --bs-purple: #9A7AC6;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -75,8 +75,8 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-heading-color: ;
-  --bs-link-color: #0d6efd;
-  --bs-link-hover-color: #0a58ca;
+  --bs-link-color: #9A7AC6;
+  --bs-link-hover-color: #9A7AC6;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
