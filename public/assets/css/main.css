@@ -198,7 +198,8 @@ CSS LIST
   height: 100%;
   width: 100%;
   border-radius: 210px;
-  background-color: #9A7AC6;
+  background-color: #708E51;
+
   z-index: -2;
   transition: all 0.4s;
 }
@@ -217,7 +218,7 @@ CSS LIST
   transition-timing-function: linear;
 }
 .theme-btn2:hover {
-  color: var(--qt-bg-bg-7);
+  color: #708E51;
   transition: all 0.4s;
 }
 .theme-btn2:hover::before {
@@ -453,7 +454,7 @@ CSS LIST
 }
 .header4-buttons a {
   display: inline-block;
-  background-color:#b6c300;
+  background-color:#708b25;
   color:white;
 }
 
@@ -690,7 +691,7 @@ CSS LIST
 
 .theme-btn8 {
   display: inline-block;
-  background-color:#b6c300;
+  background-color:#708b25;
   color: white;  /*var(--Text-Color, #0a0726)*/
   font-size: 16px;
   font-style: normal;
@@ -3126,10 +3127,8 @@ body.body {
   font-weight: 600;
   line-height: 18px; /* 100% */
   text-transform: uppercase;
-  background: var(
-    --Main-Color,
-    linear-gradient(180deg, #7846ff 0%, #70a8ff 100%)
-  );
+  background: var(--Main-Color, linear-gradient(180deg, #B6C300 0%, #708B25 100%));
+
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3137,7 +3136,7 @@ body.body {
   margin-bottom: 16px;
 }
 .heading6 span.span3 {
-  color: #775cff;
+  color: #708B25;
   display: inline-block;
   font-size: 18px;
   font-style: normal;
@@ -3619,7 +3618,7 @@ body.body {
   display: block;
   width: 45px;
   height: 45px;
-  background: #b6c300;
+  background: #708b25;
   border-radius: 50%;
   transition: all 200ms;
 }
@@ -6646,7 +6645,8 @@ li.has-dropdown1 span {
   animation-fill-mode: forwards;
   border-bottom: 1px solid rgba(255, 255, 255, 0.452);
   /* background-image: url(../img/bg/hero6-bg.png); */
-  background-color:#9A7AC6;
+  background-color:#b6c300;
+  color:white !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -8687,9 +8687,14 @@ li.has-dropdown1 span {
   transform: scale(1);
 }
 .header-area.header-area6 .header-elements .main-menu-ex ul li a {
-  color: #ffffff;
+  color: #000000;
   margin: 0px 5px;
 }
+.header-area6.sticky .header-elements .main-menu-ex ul li a {
+  color: #ffffff !important;
+  margin: 0px 5px;
+}
+
 .header-area.header-area6 .header-elements .main-menu-ex ul li li a {
   background: none;
 }
@@ -12008,7 +12013,7 @@ body.body2 {
   height: 100%;
   width: 100%;
   /* background-image: url(../img/bg/hero6-bg.png); */
-  background-color:#9A7AC6;
+  background-color:#f5f5f5;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -14318,17 +14323,17 @@ body.body2 {
   border: none;
   height: 60px;
   width: 60px;
-  background-color: #dbdffb;
+  background-color: #B6C300;
   font-size: var(--f-fs-font-fs20);
-  color: var(--qt-bg-bg-15);
+  color: #708E51;
   transition: all 0.4s;
 }
 .testimonial4 .testimonial-arrows button:nth-child(1) {
   margin-right: 10px;
 }
 .testimonial4 .testimonial-arrows button:hover {
-  color: var(--qt-text-h-text1);
-  background-color: var(--qt-bg-bg-15);
+  color: white;
+  background-color: #708E51;
 }
 .testimonial4 .p-headding p {
   color: var(--qt-text-p-text4);
@@ -17978,7 +17983,7 @@ body.body2 {
 
 .service4 .service-box {
   text-align: center;
-  background-color: var(--qt-bg-bg-16);
+  background-color: #B6C300;
   border-radius: 4px;
   padding: 28px 22px;
   transition: all 0.4s;
@@ -17987,7 +17992,7 @@ body.body2 {
 .service4 .service-box:hover {
   transform: translateY(-10px);
   transition: all 0.4s;
-  background-color: #9A7AC6;
+  background-color: #708b25;
 }
 .service4 .service-box:hover .icon img {
   transition: all 0.4s;

@@ -6,6 +6,43 @@ import Layout from '../layouts/Layout.astro';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
+
+<style>
+	/* Marquee container */
+	.marquee-container {
+	  overflow: hidden;
+	  white-space: nowrap;
+	  background: #708B25;
+	  padding: 10px 0;
+	}
+  
+	/* Marquee text */
+	.marquee-text {
+	  display: inline-block;
+	  padding-left: 100%;
+	  font-size: 1.5rem;
+	  color: #fff;
+	  animation: marquee 15s linear infinite;
+	  will-change: transform;       /* Hint to browser to optimize animation */
+	  backface-visibility: hidden;   /* Further optimization for smoother rendering */
+	}
+  
+	@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  10%  { transform: translateX(-10%); }
+  20%  { transform: translateX(-20%); }
+  30%  { transform: translateX(-30%); }
+  40%  { transform: translateX(-40%); }
+  50%  { transform: translateX(-50%); }
+  60%  { transform: translateX(-60%); }
+  70%  { transform: translateX(-70%); }
+  80%  { transform: translateX(-80%); }
+  90%  { transform: translateX(-90%); }
+  100% { transform: translateX(-100%); }
+}
+
+  </style>
+
 <div class="body">
 	
 	<Layout>
@@ -46,10 +83,10 @@ import Layout from '../layouts/Layout.astro';
 						<div class="row align-items-center">
 						  <div class="col-lg-5">
 							<div class="main-heading">
-							  <span class="span" data-aos="fade-left" data-aos-duration="700"><img src="assets/img/icons/main-span6.png" alt=""> Top Choice For HME/DME Businesses</span>
-							  <h1 class="text-anime-style-3">Scale your HME/DME business online with expert web, SEO & lead generation.</h1>
+							  <span class="span" data-aos="fade-left" data-aos-duration="700" style="color:black;"><img src="assets/img/icons/main-span6.png" alt="" style="filter: invert(1);"> Top Choice For HME/DME Businesses</span>
+							  <h1 class="text-anime-style-3" style="color:black;">Scale your HME/DME business online with expert web, SEO & lead generation.</h1>
 							  <div class="space16"></div>
-							  <p data-aos="fade-right" data-aos-duration="700">Accelerate growth with tailored digital strategies that drive traffic, convert leads, and maximize revenue.</p>
+							  <p data-aos="fade-right" data-aos-duration="700" style="color:black;">Accelerate growth with tailored digital strategies that drive traffic, convert leads, and maximize revenue.</p>
 							  <div class="space30"></div>
 							  <div class="buttons" data-aos="fade-right" data-aos-duration="900">
 								<a href="#" class="theme-btn8"><span class="tb8">Get Started Now <span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></span></a>
@@ -60,7 +97,7 @@ import Layout from '../layouts/Layout.astro';
 										</a>
 								  </div>
 								  <div class="video-btn-pera">
-									  <p>Play Video</p>
+									  <p style="color:black !important;">Play Video</p>
 								  </div>
 								</div>
 		
@@ -86,8 +123,12 @@ import Layout from '../layouts/Layout.astro';
 				</div>
 		
 				<!--===== HERO AREA END =======-->
-
-				
+				<section class="marquee-container">
+					<div class="marquee-text">
+					  getting your homepage revamped for free and website maintenance in $99
+					</div>
+				  </section>
+				  
 
 				  <!-- Companies worked with starts -->
 				  <div class="testimonial4 sp">
@@ -288,8 +329,8 @@ import Layout from '../layouts/Layout.astro';
 						<div class="row">
 							<div class="col-lg-5 m-auto text-center">
 								<div class="headding4 pbmit-heading-subheading animation-style2">
-									<span class="span">Uncore Digital</span>
-									<h2 class="pbmit-title">Why Choose Us</h2>
+									<span class="span" style="color:#708b25">Uncore Digital</span>
+									<h2 class="pbmit-title" style="color:#708b25">Why Choose Us</h2>
 								</div>
 							</div>
 						</div>
@@ -390,7 +431,7 @@ import Layout from '../layouts/Layout.astro';
 						<div class="row">
 							<div class="col-lg-6 m-auto text-center">
 								<div class="headding4 pbmit-heading-subheading animation-style2">
-									<span class="span">Our Testimonials</span>
+									<span class="span" style="color:#b6c300">Our Testimonials</span>
 									<h2 class="pbmit-title">What Our Client Says</h2>
 								</div>
 							</div>
@@ -553,7 +594,7 @@ import Layout from '../layouts/Layout.astro';
 						  <div class="row">
 							<div class="col-lg-10 m-auto text-center">
 							  <div class="heading6">
-								<span class="span">FAQ Question</span>
+								<span class="span" style="color:#B6C300">FAQ Question</span>
 								<h2 class="text-anime-style-3">Frequently Asked Question</h2>
 							  </div>
 			  
@@ -656,7 +697,7 @@ import Layout from '../layouts/Layout.astro';
                             <textarea cols="30" rows="3" placeholder="Your Message/Services Needed*"></textarea>
                           </div>
                           <div class="button">
-                             <button type="submit" class="theme-btn2">Submit Now</button>
+                             <button type="submit" class="theme-btn2" style="background-color:#b6c300">Submit Now</button>
                           </div>
                         </div>
                       </div>
@@ -674,7 +715,17 @@ import Layout from '../layouts/Layout.astro';
           <img class="shape3" src="assets/img/shapes/apps-shape1.png" alt="">
         </div>
 					 <!-- Contact & Inquiry Form ends -->
+					 <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
+					 <script>
+					   // Animate the wrapper so it moves continuously
+					   gsap.to(".marquee-wrap", {
+						 x: "-50%",       // Moves half the container width, which is exactly one copy
+						 duration: 15,    // Adjust duration for speed/smoothness
+						 ease: "linear",
+						 repeat: -1       // Loop indefinitely
+					   });
+					 </script>
 	</Layout>
 </div>
 
