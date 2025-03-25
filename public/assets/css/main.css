@@ -2604,7 +2604,7 @@ body.body {
   --qt-bg-bg-12: #343368;
   --qt-bg-bg-13: #f5f8ff;
   --qt-bg-bg-14: #e7e8ff;
-  --qt-bg-bg-15: #4c5eec;
+  --qt-bg-bg-15: #708B25;
   --qt-bg-bg-16: #edeefd;
   --qt-bg-bg-17: #dfd8fd;
   --qt-border-border-1: #f0f0f0;
@@ -2933,7 +2933,7 @@ body.body {
   }
 }
 .headding4 p {
-  color: var(--qt-text-p-text4);
+  color: white;
   font-size: var(--f-fs-font-fs18);
   line-height: var(--f-fs-font-fs30);
   font-weight: var(--f-fw-regular);
@@ -2944,7 +2944,7 @@ body.body {
   font-size: var(--f-fs-font-fs24);
   line-height: var(--f-fs-font-fs24);
   font-weight: var(--f-fw-blod);
-  color: var(--qt-text-h-text4);
+  color: white;
   transition: all 0.4s;
 }
 
@@ -3442,7 +3442,7 @@ body.body {
   text-align: center;
   line-height: 56px;
   font-size: 18px;
-  color: #03256c;
+  color: #708B25;
   left: 0;
   top: 0;
   height: 56px;
@@ -3484,7 +3484,7 @@ body.body {
 }
 
 .progress-wrap svg.progress-circle path {
-  stroke: #03256c; /* --- Lijn progres kleur --- */
+  stroke: #708B25; /* --- Lijn progres kleur --- */
   stroke-width: 4;
   box-sizing: border-box;
   transition: all 200ms linear;
@@ -5017,7 +5017,7 @@ body.body {
 }
 .footer2 .single-footer-items .social-icons li a:hover::after {
   transition: all 0.4s;
-  background: #9A7AC6;
+  background: #708B25;
 }
 .footer2 .copyright-area {
   padding: 16px 0;
@@ -17983,7 +17983,7 @@ body.body2 {
 
 .service4 .service-box {
   text-align: center;
-  background-color: #B6C300;
+  background-color: #708B25;
   border-radius: 4px;
   padding: 28px 22px;
   transition: all 0.4s;
@@ -17992,8 +17992,14 @@ body.body2 {
 .service4 .service-box:hover {
   transform: translateY(-10px);
   transition: all 0.4s;
-  background-color: #708b25;
+  background-color: #b6c300;
 }
+
+.service4 .service-box .icon img {
+  transition: all 0.4s;
+  filter: brightness(0) invert(1);
+}
+
 .service4 .service-box:hover .icon img {
   transition: all 0.4s;
   filter: brightness(0) invert(1);
