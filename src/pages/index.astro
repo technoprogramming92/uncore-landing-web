@@ -1,7 +1,7 @@
 ---
 
 import Layout from '../layouts/Layout.astro';
-
+import Popup from '../components/Popup.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -76,7 +76,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </div>
   </div>
-		        <!--===== HERO AREA START Section 1=======-->
+		<Popup/>
+  <!--===== HERO AREA START Section 1=======-->
 
 				<div class="hero-area6">
 					<div class="container">
@@ -713,19 +714,8 @@ import Layout from '../layouts/Layout.astro';
           <img class="shape1" src="assets/img/shapes/apps-shape2.png" alt="">
           <img class="shape2" src="assets/img/shapes/apps-shape1.png" alt="">
           <img class="shape3" src="assets/img/shapes/apps-shape1.png" alt="">
-        </div>
-					 <!-- Contact & Inquiry Form ends -->
-					 <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-
-					 <script>
-					   // Animate the wrapper so it moves continuously
-					   gsap.to(".marquee-wrap", {
-						 x: "-50%",       // Moves half the container width, which is exactly one copy
-						 duration: 15,    // Adjust duration for speed/smoothness
-						 ease: "linear",
-						 repeat: -1       // Loop indefinitely
-					   });
-					 </script>
+        </div>		 
+		<!-- Contact & Inquiry Form ends -->
 	</Layout>
 </div>
 
